@@ -1,6 +1,6 @@
 listen web-server
         bind *:80
-        bind *:443 ssl crt /etc/haproxy/certs/www.betelhem.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.agertu.tech.pem
         balance roundrobin
-        server web-alu 18.212.169.44:80 check
-        server web-second 52.91.19.196:80 check
+        server web-alu 44.206.225.162 check
+        server web-second 44.203.72.239 check
